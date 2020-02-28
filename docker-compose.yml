@@ -12,6 +12,7 @@ services:
 #       source: ./wp-content
 #       target: /var/www/html/wp-content
     restart: always
+    container_name: wp
     environment:
       WORDPRESS_DB_HOST: wordpress_db:3306
       WORDPRESS_DB_USER: wordpress
