@@ -31,6 +31,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
+    container_name: pma
     depends_on:
       - wordpress_db
     restart: always
